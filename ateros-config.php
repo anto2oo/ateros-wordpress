@@ -61,7 +61,7 @@ add_action('admin_menu', 'registerTextileSidebarButton');
 
 function activate_all_plugins()
 {
-    activate_plugins(['woocommerce-3.7.1/woocommerce.php']);
+    activate_plugins(['woocommerce-3.7.1/woocommerce.php'], '/wp-admin/');
 }
 
 add_action('admin_init', 'activate_all_plugins');
